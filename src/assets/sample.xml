@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd">
+<report name="JaCoCo">
+  <sessioninfo id="org.jacoco.core.test" start="1699565277294" dump="1699565280093" />
+  <group name="org.jacoco.core">
+    <package name="org/jacoco/core/tools">
+      <class name="org/jacoco/core/tools/ExecFileLoader" sourcefilename="ExecFileLoader.java">
+        <method name="&lt;init&gt;" desc="()V" line="42">
+          <counter type="INSTRUCTION" missed="0" covered="13" />
+          <counter type="LINE" missed="0" covered="4" />
+          <counter type="COMPLEXITY" missed="0" covered="1" />
+          <counter type="METHOD" missed="0" covered="1" />
+        </method>
+        <counter type="INSTRUCTION" missed="0" covered="93" />
+        <counter type="BRANCH" missed="1" covered="1" />
+        <counter type="LINE" missed="0" covered="28" />
+        <counter type="COMPLEXITY" missed="1" covered="7" />
+        <counter type="METHOD" missed="0" covered="7" />
+        <counter type="CLASS" missed="0" covered="1" />
+      </class>
+      <sourcefile name="ExecDumpClient.java">
+        <line nr="38" mi="0" ci="2" mb="0" cb="0" />
+        <counter type="INSTRUCTION" missed="7" covered="115" />
+        <counter type="BRANCH" missed="0" covered="4" />
+        <counter type="LINE" missed="4" covered="38" />
+        <counter type="COMPLEXITY" missed="2" covered="11" />
+        <counter type="METHOD" missed="2" covered="9" />
+        <counter type="CLASS" missed="0" covered="1" />
+      </sourcefile>
+      <counter type="INSTRUCTION" missed="7" covered="208" />
+      <counter type="BRANCH" missed="1" covered="5" />
+      <counter type="LINE" missed="4" covered="66" />
+      <counter type="COMPLEXITY" missed="3" covered="18" />
+      <counter type="METHOD" missed="2" covered="16" />
+      <counter type="CLASS" missed="0" covered="2" />
+    </package>
+    <counter type="INSTRUCTION" missed="411" covered="14111" />
+    <counter type="BRANCH" missed="101" covered="1304" />
+    <counter type="LINE" missed="122" covered="3337" />
+    <counter type="COMPLEXITY" missed="121" covered="1326" />
+    <counter type="METHOD" missed="20" covered="703" />
+    <counter type="CLASS" missed="2" covered="140" />
+  </group>
+  <counter type="INSTRUCTION" missed="1431" covered="26657" />
+  <counter type="BRANCH" missed="160" covered="2092" />
+  <counter type="LINE" missed="366" covered="6172" />
+  <counter type="COMPLEXITY" missed="226" covered="2452" />
+  <counter type="METHOD" missed="76" covered="1444" />
+  <counter type="CLASS" missed="15" covered="288" />
+</report>

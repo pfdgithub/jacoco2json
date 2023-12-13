@@ -1,0 +1,9 @@
+.demo {
+  h1 {
+    margin: 0;
+  }
+  textarea {
+    width: 100%;
+    height: 300px;
+  }
+}

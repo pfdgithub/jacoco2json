@@ -1,0 +1,70 @@
+{
+  "name": "jacoco2json",
+  "library": "jacoco2json",
+  "version": "1.0.0",
+  "description": "JaCoCo JSON Parser",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "serve": "vite",
+    "build": "tsc && vite build && npm run build:types",
+    "build:types": "tsc --outDir dist --noEmit false --composite false --tsBuildInfoFile null --declaration --emitDeclarationOnly",
+    "prepare": "husky install",
+    "version": "npm install && npm run build && git add .",
+    "postversion": "git push && git push --tags",
+    "release": "npm version ${npm_package_version%%-*} --allow-same-version && npm publish",
+    "release:major": "npm version major && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:patch": "npm version patch && npm publish",
+    "release:alpha": "npm version prerelease --preid alpha && npm publish --tag alpha",
+    "release:beta": "npm version prerelease --preid beta && npm publish --tag beta",
+    "release:rc": "npm version prerelease --preid rc && npm publish --tag rc"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pfdgithub/jacoco2json.git"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "18.x",
+    "react-dom": "18.x"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "postcss-preset-env": "^9.3.0",
+    "prettier": "^3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vite-plugin-checker": "^0.6.2"
+  }
+}
