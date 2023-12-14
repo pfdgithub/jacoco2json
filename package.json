@@ -40,10 +40,7 @@
     "url": "https://github.com/pfdgithub/jacoco2json.git"
   },
   "dependencies": {},
-  "peerDependencies": {
-    "react": "18.x",
-    "react-dom": "18.x"
-  },
+  "peerDependencies": {},
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
