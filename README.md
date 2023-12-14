@@ -19,11 +19,18 @@ Call the `parseXML` and `analyseJSON` methods in sequence.
 
 ## parseXML(xml: string, options?: ParseOptions): ReportNode
 
-Refer to the [XML Coverage Report](https://www.jacoco.org/jacoco/trunk/coverage/jacoco.xml) file, keep the original structure, and parse XML into JSON.
+Refer to the [XML Coverage Report](https://www.jacoco.org/jacoco/trunk/coverage/jacoco.xml) file, keep the original structure and name, and parse XML into JSON.
 
 ## analyseJSON(json: ReportNode, options?: AnalyseOptions): ReportAnalysis
 
-Refer to the [HTML Coverage Report](https://www.jacoco.org/jacoco/trunk/coverage/index.html) file to analyse the parsed JSON.
+Refer to the [HTML Coverage Report](https://www.jacoco.org/jacoco/trunk/coverage/index.html) file, transform the original structure and name, and analyse the parsed JSON.
+
+- Package name
+- Class name
+- Class initialization method
+- Instance initialization method
+- Method descriptors
+- ~~Anonymous class name~~ (Missing superclass and interface information)
 
 # [Demo](./src/Demo/)
 
@@ -49,7 +56,7 @@ https://github.com/jacoco/jacoco/blob/master/org.jacoco.report.test/src/org/jaco
 https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-2.html#jvms-2.9  
 https://docs.oracle.com/javase/specs/jvms/se21/html/jvms-4.html#jvms-4.3
 
-# Sample
+# [Sample](./src/assets/)
 
 <details>
 <summary>JaCoCo XML</summary>
