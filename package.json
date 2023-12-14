@@ -1,7 +1,7 @@
 {
   "name": "jacoco2json",
   "library": "jacoco2json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JaCoCo JSON Parser",
   "type": "module",
   "main": "./dist/index.cjs",
